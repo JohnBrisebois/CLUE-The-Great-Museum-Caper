@@ -1,0 +1,291 @@
+.badge {}
+
+.cell {
+  border: 2px solid #adadad;
+  background-color: #f5f5f5;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: -2px;
+}
+
+.row {
+  margin-bottom: 0px;
+  position: relative;
+  top: 95px;
+}
+
+.board {
+  position: relative;
+  text-align: center;
+  background-color: grey;
+  margin: auto;
+  width: 840px;
+  height: 730px;
+
+}
+.dice {
+  position: absolute;
+  display: inline-block;
+}
+#dice-number {
+  top: 20px;
+}
+#dice-action {
+  top: 40px;
+  left: 10px
+}
+#dice-container {
+  border: 5px solid grey;
+  width: 190px;
+  height: 150px;
+  position: relative;
+  top: 288px;
+}
+#piece-container {
+  background-color: green;
+  width: 200px
+}
+
+#control-container {
+  background-color: red;
+  margin: auto;
+  width: 200px;
+}
+#camera-container {
+  position: absolute;
+  background-color: white;
+  top: 100px;
+  left: 25px;
+  width: 163px;
+}
+#marker-container {
+  position: absolute;
+  background-color: pink;
+  width: 200px;
+  height: 100px;
+}
+.camera {
+  display: inline-block;
+  cursor: grab;
+}
+.game {
+  background-color: blue;
+  position: relative;
+  margin: auto;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.cellinput {
+
+  height: 100px;
+  width: 100px;
+
+}
+
+.body {
+  margin: 0px;
+  text-align: center;
+}
+.red {
+  background-color: #cf3c3c;
+}
+.purple {
+  background-color: #8d5797;
+}
+.beige {
+  background-color: beige;
+}
+.blue {
+  background-color: #6da0af;
+}
+.green {
+  background-color: #619757;
+}
+.orange {
+  background-color: orange;
+}
+.grey {
+  background-color: #cfcfcf;
+}
+
+.dragging {
+  opacity: 100;
+  cursor: grabbing;
+}
+
+.marker {
+  cursor: grab;
+  display: inline-block;
+}
+
+.title {
+  margin: 50px;
+  font-size: 50;
+}
+
+.cell.wall1 {
+  border-left: 2px solid black;
+}
+.cell.wall2 {
+  border-bottom: 2px solid black;
+}
+.cell.wall3 {
+  border-right: 2px solid black;
+}
+.cell.wall4 {
+  border-top: 2px solid black;
+}
+.moveable {
+  filter: brightness(1.15);
+  cursor: grab;
+}
+#row5 {
+  left: -27px;
+}
+#row6 {
+  left: 27px;
+}
+.hidden {
+  opacity: 0;
+}
+
+#marker-select-container {
+  margin: auto;
+  background-color: grey;
+  width: 700px;
+  height: 170px;
+  visibility: hidden;
+}
+
+.select {
+  display: inline-block;
+  height: 150px;
+  width: 100px;
+  margin: 10px;
+}
+
+.available {
+  background-color: green;
+}
+
+.menu-button {
+  position: relative;
+  background-color: lightblue;
+  display: inline-block;
+  margin: 15px;
+  width: 150px;
+  height: 70px;
+  top: 15px;
+  cursor: pointer;
+}
+
+#menu-background {
+  position: relative;
+  background: rgba(1, 1, 1, .8);
+  width: 1240px;
+  height: 730px;
+  text-align: center;
+  margin: auto;
+  top: -730px;
+}
+
+#painting-container {
+  background-color: lightgreen;
+  position: relative;
+  top: 250px;
+}
+
+.painting {
+  cursor: grab;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+#menu-container {
+  position: relative;
+  width: 400px;
+  height: 130px;
+  background-color: lightgrey;
+  text-align: center;
+  margin: auto;
+  top: 100px;
+}
+.input {
+  position: relative;
+  left: 100px;
+}
+
+.looking {
+  background-color: pink;
+}
+
+.dice-button {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.lock {
+  display: inline-block;
+  position: absolute;
+}
+
+.lock-left {
+  transform: rotate(-90deg);
+}
+
+.lock-right {
+  transform: rotate(90deg);
+}
+
+.lock-bottom {
+  transform: rotate(180deg);
+}
+
+#lock-1 {
+  top: 241px;
+  left: 27px;
+}
+#lock-2 {
+  top: 349px;
+  left: 81px;
+}
+#lock-3 {
+  top: 457px;
+  left: 27px;
+}
+#lock-4 {
+  top: 577px;
+  left: 149px;
+}
+#lock-5 {
+  top: 633px;
+  left: 365px;
+}
+#lock-6 {
+  top: 633px;
+  left: 419px;
+}
+#lock-7 {
+  top: 457px;
+  left: 757px;
+}
+#lock-8 {
+  top: 295px;
+  left: 703px;
+}
+#lock-9 {
+  top: 119px;
+  left: 635px;
+}
+#lock-10 {
+  top: 11px;
+  left: 311px;
+}
+#lock-11 {
+  top: 11px;
+  left: 473px;
+}

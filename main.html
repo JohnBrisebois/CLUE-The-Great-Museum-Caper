@@ -1,0 +1,300 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CLUE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+  <div id="title" class="title">CLUE</div>
+</header>
+
+<body class="body">
+  <div id="game-container" class="game">
+    <div id="piece-container" class="pieces">pieces
+      <div id="marker-container">
+        <div id="marker-red" class="marker available">
+          <img src="markers/marker_red.png" width="39" height="50">
+        </div>
+        <div id="marker-blue" class="marker available">
+          <img src="markers/marker_blue.png" width="39" height="50">
+        </div>
+          <div id="marker-yellow" class="marker available">
+            <img src="markers/marker_yellow.png" width="39" height="50">
+          </div>
+          <div id="marker-purple" class="marker available">
+            <img src="markers/marker_purple.png" width="39" height="50">
+          </div>
+          <div id="marker-thief" class="marker available">
+            <img src="markers/marker_gray.png" width="39" height="50">
+          </div>
+      </div>
+      <div id="camera-container" class="camera-container">
+        <div id="camera-1" class="camera">
+          <img src="Cameras/cam_1.png" width="50" height="50">
+        </div>
+        <div id="camera-2" class="camera">
+          <img src="Cameras/cam_2.png" width="50" height="50">
+        </div>
+        <div id="camera-3" class="camera">
+          <img src="Cameras/cam_3.png" width="50" height="50">
+        </div>
+        <div id="camera-4" class="camera">
+          <img src="Cameras/cam_4.png" width="50" height="50">
+        </div>
+        <div id="camera-5" class="camera">
+          <img src="Cameras/cam_5.png" width="50" height="50">
+        </div>
+        <div id="camera-6" class="camera">
+          <img src="Cameras/cam_6.png" width="50" height="50">
+        </div>
+      </div>
+      <div id="painting-container" class="paintings">
+        <div id="painting-1" class="painting">
+          <img src="paintings/painting_1.png" width="50" height="50">
+        </div>
+        <div id="painting-2" class="painting">
+          <img src="paintings/painting_1.png" width="50" height="50">
+        </div>
+        <div id="painting-3" class="painting">
+          <img src="paintings/painting_1.png" width="50" height="50">
+        </div>
+        <div id="painting-4" class="painting">
+          <img src="paintings/painting_1.png" width="50" height="50">
+        </div>
+        <div id="painting-5" class="painting">
+          <img src="paintings/painting_1.png" width="50" height="50">
+        </div>
+        <div id="painting-6" class="painting">
+          <img src="paintings/painting_1.png" width="50" height="50">
+        </div>
+        <div id="painting-7" class="painting">
+          <img src="paintings/painting_1.png" width="50" height="50">
+        </div>
+        <div id="painting-8" class="painting">
+          <img src="paintings/painting_1.png" width="50" height="50">
+        </div>
+        <div id="painting-9" class="painting">
+          <img src="paintings/painting_1.png" width="50" height="50">
+        </div>
+      </div>
+    </div>
+    <div id="board-container" class="board">
+      <div id="row1" class="row">
+        <div id="cell-01-04" class="cell red wall1 wall4"></div>
+        <div id="cell-01-05" class="cell red door"></div>
+        <div id="cell-01-06" class="cell red wall4"></div>
+        <div id="cell-01-07" class="cell red wall4"></div>
+        <div id="cell-01-08" class="cell red door"></div>
+        <div id="cell-01-09" class="cell red wall3 wall4"></div>
+      </div>
+      <div id="row2" class="row">
+        <div id="cell-02-04" class="cell red wall1 wall2"></div>
+        <div id="cell-02-05" class="cell red"></div>
+        <div id="cell-02-06" class="cell red wall2"></div>
+        <div id="cell-02-07" class="cell red wall2"></div>
+        <div id="cell-02-08" class="cell red"></div>
+        <div id="cell-02-09" class="cell red wall2 wall3"></div>
+      </div>
+      <div id="row3" class="row">
+        <div id="cell-03-01" class="cell purple wall1 wall4"></div>
+        <div id="cell-03-02" class="cell purple wall4"></div>
+        <div id="cell-03-03" class="cell purple wall3 wall4"></div>
+        <div id="cell-03-04" class="cell grey wall1 wall4"></div>
+        <div id="cell-03-05" class="cell grey wall2"></div>
+        <div id="cell-03-06" class="cell grey wall4"></div>
+        <div id="cell-03-07" class="cell grey wall4"></div>
+        <div id="cell-03-08" class="cell grey wall2"></div>
+        <div id="cell-03-09" class="cell grey wall3 wall4"></div>
+        <div id="cell-03-10" class="cell blue wall1 wall4"></div>
+        <div id="cell-03-11" class="cell blue door"></div>
+        <div id="cell-03-12" class="cell blue wall3 wall4"></div>
+      </div>
+      <div id="row4" class="row">
+        <div id="cell-04-01" class="cell purple door"></div>
+        <div id="cell-04-02" class="cell purple"></div>
+        <div id="cell-04-03" class="cell purple wall3"></div>
+        <div id="cell-04-04" class="cell grey wall1 wall3"></div>
+        <div id="cell-04-05" class="cell beige wall1 wall4"></div>
+        <div id="cell-04-06" class="cell beige"></div>
+        <div id="cell-04-07" class="cell beige"></div>
+        <div id="cell-04-08" class="cell beige wall3 wall4"></div>
+        <div id="cell-04-09" class="cell grey wall1"></div>
+        <div id="cell-04-10" class="cell blue wall2"></div>
+        <div id="cell-04-11" class="cell blue wall2"></div>
+        <div id="cell-04-12" class="cell blue wall2 wall3"></div>
+      </div>
+      <div id="row5" class="row">
+        <div id="cell-05-01" class="cell purple wall1 wall2"></div>
+        <div id="cell-05-02" class="cell purple wall2"></div>
+        <div id="cell-05-03" class="cell purple wall2"></div>
+        <div id="cell-05-04" class="cell grey wall3"></div>
+        <div id="cell-05-05" class="cell beige wall1"></div>
+        <div id="cell-05-06" class="cell beige"></div>
+        <div id="cell-05-07" class="cell beige"></div>
+        <div id="cell-05-08" class="cell beige wall3"></div>
+        <div id="cell-05-09" class="cell grey wall1"></div>
+        <div id="cell-05-10" class="cell grey wall2 wall4"></div>
+        <div id="cell-05-11" class="cell grey wall2 wall4 door"></div>
+      </div>
+      <div id="row6" class="row">
+        <div id="cell-06-02" class="cell grey wall2 wall4 door"></div>
+        <div id="cell-06-03" class="cell grey wall2 wall4"></div>
+        <div id="cell-06-04" class="cell grey wall3"></div>
+        <div id="cell-06-05" class="cell beige wall1"></div>
+        <div id="cell-06-06" class="cell beige"></div>
+        <div id="cell-06-07" class="cell beige"></div>
+        <div id="cell-06-08" class="cell beige"></div>
+        <div id="cell-06-09" class="cell grey wall3"></div>
+        <div id="cell-06-10" class="cell green wall1 wall4"></div>
+        <div id="cell-06-11" class="cell green wall4"></div>
+        <div id="cell-06-12" class="cell green wall3 wall4"></div>
+      </div>
+      <div id="row7" class="row">
+        <div id="cell-07-01" class="cell orange wall1 wall4"></div>
+        <div id="cell-07-02" class="cell orange wall4"></div>
+        <div id="cell-07-03" class="cell orange wall3 wall4"></div>
+        <div id="cell-07-04" class="cell grey wall1"></div>
+        <div id="cell-07-05" class="cell beige"></div>
+        <div id="cell-07-06" class="cell beige"></div>
+        <div id="cell-07-07" class="cell beige"></div>
+        <div id="cell-07-08" class="cell beige wall3"></div>
+        <div id="cell-07-09" class="cell grey wall1 wall3"></div>
+        <div id="cell-07-10" class="cell green wall1"></div>
+        <div id="cell-07-11" class="cell green"></div>
+        <div id="cell-07-12" class="cell green wall3"></div>
+      </div>
+      <div id="row8" class="row">
+        <div id="cell-08-01" class="cell orange door"></div>
+        <div id="cell-08-02" class="cell orange"></div>
+        <div id="cell-08-03" class="cell orange"></div>
+        <div id="cell-08-04" class="cell grey wall3"></div>
+        <div id="cell-08-05" class="cell beige wall1 wall2"></div>
+        <div id="cell-08-06" class="cell beige"></div>
+        <div id="cell-08-07" class="cell beige"></div>
+        <div id="cell-08-08" class="cell beige wall2 wall3"></div>
+        <div id="cell-08-09" class="cell grey wall1"></div>
+        <div id="cell-08-10" class="cell green"></div>
+        <div id="cell-08-11" class="cell green"></div>
+        <div id="cell-08-12" class="cell green door"></div>
+      </div>
+      <div id="row9" class="row">
+        <div id="cell-09-01" class="cell orange wall1 wall2"></div>
+        <div id="cell-09-02" class="cell orange door"></div>
+        <div id="cell-09-03" class="cell orange wall2 wall3"></div>
+        <div id="cell-09-04" class="cell grey wall1 wall2"></div>
+        <div id="cell-09-05" class="cell grey wall4"></div>
+        <div id="cell-09-06" class="cell grey"></div>
+        <div id="cell-09-07" class="cell grey"></div>
+        <div id="cell-09-08" class="cell grey wall4"></div>
+        <div id="cell-09-09" class="cell grey wall2 wall3"></div>
+        <div id="cell-09-10" class="cell green wall1 wall2"></div>
+        <div id="cell-09-11" class="cell green wall2"></div>
+        <div id="cell-09-12" class="cell green wall2 wall3"></div>
+      </div>
+      <div id="row10" class="row">
+        <div id="cell-10-04" class="cell grey wall1 wall4"></div>
+        <div id="cell-10-05" class="cell grey wall3"></div>
+        <div id="cell-10-06" class="cell grey wall1 door"></div>
+        <div id="cell-10-07" class="cell grey wall3 door"></div>
+        <div id="cell-10-08" class="cell grey wall1"></div>
+        <div id="cell-10-09" class="cell grey wall3 wall4"></div>
+      </div>
+      <div id="row11" class="row">
+        <div id="cell-11-04" class="cell grey wall1 wall2"></div>
+        <div id="cell-11-05" class="cell grey wall2 wall3"></div>
+        <div id="cell-hidden" class="cell hidden"></div>
+        <div id="cell-hidden" class="cell hidden"></div>
+        <div id="cell-11-08" class="cell grey wall1 wall2"></div>
+        <div id="cell-11-09" class="cell grey wall2 wall3"></div>
+      </div>
+      <div id="lock-container">
+        <div id="lock-1" class="lock lock-left">
+          <img src="locks/lock.png" width="56" height="82">
+        </div>
+        <div id="lock-2" class="lock lock-left">
+          <img src="locks/lock.png" width="56" height="82">
+        </div>
+        <div id="lock-3" class="lock lock-left">
+          <img src="locks/lock.png" width="56" height="82">
+        </div>
+        <div id="lock-4" class="lock lock-bottom">
+          <img src="locks/lock.png" width="56" height="82">
+        </div>
+        <div id="lock-5" class="lock lock-bottom">
+          <img src="locks/lock.png" width="56" height="82">
+        </div>
+        <div id="lock-6" class="lock lock-bottom">
+          <img src="locks/lock.png" width="56" height="82">
+        </div>
+        <div id="lock-7" class="lock lock-right">
+          <img src="locks/lock.png" width="56" height="82">
+        </div>
+        <div id="lock-8" class="lock lock-right">
+          <img src="locks/lock.png" width="56" height="82">
+        </div>
+        <div id="lock-9" class="lock lock-top">
+          <img src="locks/lock.png" width="56" height="82">
+        </div>
+        <div id="lock-10" class="lock lock-top">
+          <img src="locks/lock.png" width="56" height="82">
+        </div>
+        <div id="lock-11" class="lock lock-top">
+          <img src="locks/lock.png" width="56" height="82">
+        </div>
+      </div>
+    </div>
+    <div id="control-container" class="controls">
+      <div id="info-container">
+        <div id="info">information!</div>
+      </div>
+      <div id = "dice-container" class="dicebox">
+        <div id="dice-number" class="dice">
+          <img src="Dice/dice_1.png" width="70" height="70">
+        </div>
+        <div id="dice-action" class="dice">
+          <img src="Dice/eye.jpg" width="70" height="70">
+        </div>
+      </div>
+      <div id = "camera-controls">
+      </div>
+      <div id="start-button" class="button">READY
+      </div>
+      <div id="reset-button" class="button">RESET
+      </div>
+      <div id="dice-controls-container" class="controls">
+        <div id="button-eye" class=dice-button>
+          <img src="Dice/button_eye.png" width="60" height="60">
+        </div>
+        <div id="button-cameras" class=dice-button>
+          <img src="Dice/button_cameras.png" width="60" height="60">
+        </div>
+        <div id="button-motion" class=dice-button>
+          <img src="Dice/button_motion.png" width="60" height="60">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="menu-background">
+    <div id="menu-container">
+      <div id="create-button" class="menu-button">create game</div>
+      <div id="join-button" class="menu-button">join game</div>
+      <div id="thiefTest-button" class="menu-button">thief test</div>
+      <div id="markerTest-button" class="menu-button">marker test</div>
+      <input type="text" id="input-id" class="input">game ID</input>
+    </div>
+    <div id="marker-select-container">
+      <div id="select-red" class="select marker-red available">select red</div>
+      <div id="select-blue" class="select marker-blue available">select blue</div>
+      <div id="select-yellow" class="select marker-yellow available">select yellow</div>
+      <div id="select-purple" class="select marker-purple available">select purple</div>
+      <div id="select-thief" class="select marker-thief available">select thief</div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js" charset="utf-8"></script>
+  <script type="module" src= "./js/initializeFirebase.js"></script>
+
+</body>
+</html>
